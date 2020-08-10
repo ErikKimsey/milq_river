@@ -201,6 +201,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ca9309943fe642adaa867c89a811624,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ca9309943fe642adaa867c89a811624, type: 3}
 --- !u!1 &115006354
@@ -1592,7 +1597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1368390975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1683,7 +1688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368390974}
   m_LocalRotation: {x: 0.12266503, y: 0.21894504, z: -0.027756257, w: 0.9675981}
-  m_LocalPosition: {x: -6.1, y: 9.39, z: -6.95}
+  m_LocalPosition: {x: -11.65, y: 17.73, z: -31.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2049,7 +2054,7 @@ GameObject:
   - component: {fileID: 1605415375}
   - component: {fileID: 1605415374}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Leaves_particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4780,7 +4785,7 @@ ParticleSystem:
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 6.61
+      scalar: 8.76
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4937,8 +4942,8 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     separateAxes: 0
-    frequency: 0.62
-    damping: 1
+    frequency: 0.68
+    damping: 0
     octaves: 1
     octaveMultiplier: 0.5
     octaveScale: 2
@@ -5778,7 +5783,7 @@ ParticleSystem:
     m_Bounce:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.98
+      scalar: 0
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5831,7 +5836,7 @@ ParticleSystem:
     m_EnergyLossOnCollision:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
