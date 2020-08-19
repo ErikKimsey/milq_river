@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class ShakeCanopy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    ParticleSystem particleSystem;
     void Start()
     {
-        
+        particleSystem = GetComponentInChildren<ParticleSystem>();
+        Debug.Log(particleSystem.name);
     }
+
+    
 
     /**
     -- Canopy object needs collision detector,
