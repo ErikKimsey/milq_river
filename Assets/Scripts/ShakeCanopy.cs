@@ -11,7 +11,7 @@ public class ShakeCanopy : MonoBehaviour
         Debug.Log(particleSystem.name);
     }
 
-    
+
 
     /**
     -- Canopy object needs collision detector,
@@ -23,8 +23,3 @@ public class ShakeCanopy : MonoBehaviour
     */
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
