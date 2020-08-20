@@ -270,6 +270,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 705343861442700931, guid: 74d1037d682d246f3838e5f3a89a5e29,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f407be95e02e14cffbd4da13f4000e6e, type: 2}
     - target: {fileID: 705343861442700989, guid: 74d1037d682d246f3838e5f3a89a5e29,
         type: 3}
       propertyPath: m_Name
@@ -685,7 +690,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f64ed0bf7b009419b9618fc376ebc098, type: 2}
+      objectReference: {fileID: 2100000, guid: b3d941b4f5a4f45a3a0bf0d483bd713d, type: 2}
     - target: {fileID: -1945498726413123045, guid: eb4bbb0521a8847f4ab2120aad2d8b34,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -797,7 +802,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0, g: 0.50196075, b: 1, a: 1}
-  m_Intensity: 2.12
+  m_Intensity: 0.48
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -1176,7 +1181,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 02f48dedd1e434322a8d4157ee8edab6, type: 2}
+      objectReference: {fileID: 2100000, guid: f407be95e02e14cffbd4da13f4000e6e, type: 2}
     - target: {fileID: 8628010425553916075, guid: a2cf9944b029942619d4a2506f60c1c0,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7932,7 +7937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1897817865
 Transform:
   m_ObjectHideFlags: 0
@@ -8033,7 +8038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1915350107
 Transform:
   m_ObjectHideFlags: 0
@@ -8221,8 +8226,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
-  m_Intensity: 0.4
+  m_Color: {r: 1, g: 0.9481132, b: 0.9481132, a: 1}
+  m_Intensity: 0.18
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8419,7 +8424,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.1273585, b: 0.64375794, a: 1}
-  m_Intensity: 0.82
+  m_Intensity: 0.43
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082

@@ -12,7 +12,7 @@ public class ShakeCanopy : MonoBehaviour
     }
 
 
-
+}
     /**
     -- Canopy object needs collision detector,
     -- On collision:
