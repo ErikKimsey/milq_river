@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class ShakeCanopy : MonoBehaviour {
 
-    public ParticleSystem particleSystem;
+    public GameObject particleSystem;
+    ParticleSystem ps;
 
     private void Awake() {
-        particleSystem = GetComponent<ParticleSystem>();
+        
     }
     
     private void Start(){
+        
+    }
 
+    void OnCollisionEnter(Collision other) {
+        Debug.Log(other);
     }
 
     public void InitShake(){
@@ -19,8 +24,11 @@ public class ShakeCanopy : MonoBehaviour {
     }
 
     public void PlayParticles(){
-        Debug.Log("particleSystem");
         Debug.Log(particleSystem);
+        GameObject clone = Instantiate(particleSystem, transform.position, Quaternion.identity);
+        Debug.Log(clone);
+        clone.GetComponent<ParticleSystem>().Play();
+   
     }
 
 

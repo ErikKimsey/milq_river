@@ -6,6 +6,7 @@ public class TouchCanopy : MonoBehaviour
 {
 
     ShakeCanopy shakeCanopy;
+    public string buttonTag;
      
     void Start(){
         shakeCanopy = GetComponent<ShakeCanopy>();
@@ -20,7 +21,12 @@ public class TouchCanopy : MonoBehaviour
                 RaycastHit hit;
 
                 if(Physics.Raycast(ray, out hit)){
-                    shakeCanopy.PlayParticles();
+                    if(hit.collider.gameObject.tag != buttonTag){
+                        Debug.Log("Not a hotdog");
+                        return;
+                    }
+                    
+                    hit.collider.gameObject.GetComponent<ShakeCanopy>().PlayParticles();
                 }
             }
         }
