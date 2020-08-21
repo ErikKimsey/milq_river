@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class TouchCanopy : MonoBehaviour
 {
-    void Start()
-    {
-        
+
+    ShakeCanopy shakeCanopy;
+     
+    void Start(){
+        shakeCanopy = GetComponent<ShakeCanopy>();
     }
 
     void HandleTouch(){
@@ -18,7 +20,7 @@ public class TouchCanopy : MonoBehaviour
                 RaycastHit hit;
 
                 if(Physics.Raycast(ray, out hit)){
-                    Debug.Log(hit.collider.name);
+                    shakeCanopy.PlayParticles();
                 }
             }
         }

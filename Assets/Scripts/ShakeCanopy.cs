@@ -2,13 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShakeCanopy : MonoBehaviour
-{
-    ParticleSystem particleSystem;
-    void Start()
-    {
-        particleSystem = GetComponentInChildren<ParticleSystem>();
-        Debug.Log(particleSystem.name);
+public class ShakeCanopy : MonoBehaviour {
+
+    public ParticleSystem particleSystem;
+
+    private void Awake() {
+        particleSystem = GetComponent<ParticleSystem>();
+    }
+    
+    private void Start(){
+
+    }
+
+    public void InitShake(){
+        Debug.Log("InitSHake");
+    }
+
+    public void PlayParticles(){
+        Debug.Log("particleSystem");
+        Debug.Log(particleSystem);
     }
 
 
