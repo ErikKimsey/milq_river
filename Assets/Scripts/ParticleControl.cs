@@ -10,7 +10,7 @@ public class ParticleControl : MonoBehaviour
     private ParticleSystem ps;
     private Transform targetTransform;
     public GameObject target;
-    private static ParticleSystem.Particle[] particles;
+    private static ParticleSystem.Particle[] particles  = new ParticleSystem.Particle[1000];
 
     void Start()
     {
