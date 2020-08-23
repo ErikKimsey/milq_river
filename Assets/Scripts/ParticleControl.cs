@@ -17,6 +17,7 @@ public class ParticleControl : MonoBehaviour
         targetTransform = target.transform;
         Debug.Log(targetTransform);
         ps = GetComponent<ParticleSystem>();
+        Debug.Log(targetTransform.position);
         // HandleParticleEmission();
     }
 
@@ -29,11 +30,10 @@ public class ParticleControl : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             float distance = Vector3.Distance(targetTransform.position, particles[i].position);
-            Debug.Log(distance);
            
             if (distance > 0.1f)
             {
-                particles[i].position = Vector3.Lerp(particles[i].position, targetTransform.position, Time.deltaTime / 2.0f);
+                particles[i].position = Vector3.Lerp(particles[i].position, targetTransform.position, Time.deltaTime * 2f);
             }
         }
         ps.SetParticles(particles, count);
